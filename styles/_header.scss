@@ -1,0 +1,45 @@
+.header {
+  padding-top: 20px;
+	
+
+  &-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &-logo {}
+
+  &-menu {
+    margin-left: 100px;
+  }
+
+  &-contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+		gap: 8px;
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+  }
+}
+
+.menu {
+
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    li {
+      a {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

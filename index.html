@@ -4,36 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="57x57" href="./public/img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./public/img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./public/img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./public/img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./public/img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./public/img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./public/img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./public/img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./public/img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./public/img/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./public/img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./public/img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./public/img/favicons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="preload" href="./fonts/Commissioner-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Commissioner-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Commissioner-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Commissioner-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Commissioner-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <title>KEMENGER MEKTEBI - центр интеллектуального развития</title>
 </head>
 
 <body>
-  <section class="first-screen">
+  <section class="firstscreen">
     <header class="header">
       <div class="container header-container">
         <div class="header-logo"><img src="./img/logo.png" alt="логотип центра интеллектуального развития KEMENGER MEKTEBI"></div>
-        <nav class="header-menu">
+        <nav class="header-menu menu">
           <ul class="menu-list">
             <li><a href="">О нас</a></li>
             <li><a href="">Каталог</a></li>
@@ -42,12 +43,27 @@
             <li><a href="">Контакты</a></li>
           </ul>
         </nav>
+        <a href="tel:87711459826" class="header-contacts">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#018FA3"/>
+            <path d="M27.5635 23.7424L25.3306 21.5095C24.5332 20.7121 23.1775 21.0311 22.8585 22.0678C22.6193 22.7855 21.8219 23.1842 21.1042 23.0247C19.5093 22.626 17.3562 20.5526 16.9574 18.878C16.7182 18.1602 17.1967 17.3628 17.9144 17.1236C18.9511 16.8046 19.27 15.449 18.4726 14.6515L16.2397 12.4187C15.6018 11.8604 14.6449 11.8604 14.0866 12.4187L12.5715 13.9338C11.0563 15.5287 12.731 19.7552 16.479 23.5032C20.227 27.2511 24.4534 29.0056 26.0483 27.4106L27.5635 25.8955C28.1217 25.2575 28.1217 24.3006 27.5635 23.7424Z" fill="white"/>
+          </svg>
+          <span>8 (771) 145-98-26</span>
+        </a>
         </div>
       
     </header>
-    <div class="info"></div>
+    <div class="info">
+      <div class="container info-container">
+        <div class="info-content content">
+          <h1 class="content-title"><span>KEMENGER MEKTEBI</span> - центр
+            интеллектуального развития</h1>
+          <p class="content-subtitle">Обучение происходит на казахском и русском языках. При записи на два или более курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.</p>
+          <button type="button" class="content-btn">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
   </section>
-
 
   <script type="module" src="/main.js"></script>
 </body>
