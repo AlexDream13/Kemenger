@@ -6,14 +6,21 @@
   &-container {
     display: flex;
     align-items: center;
-    background: url('img/firstscreen-bg.png') center center no-repeat;
+    background: url('img/left-bg.webp') left center no-repeat;
     background-size: contain;
     height: 100%;
+    @media (max-width:1022px){
+      background: url('img/firstscreen-bg.webp') center center no-repeat;
+      background-size: contain;
+    }
     border: 1px solid #000;
   }
 
   &-content {
     width: 60%;
+    @media (max-width: 1022px){
+      width: 100%;
+    }
   }
 }
 
@@ -29,10 +36,30 @@
   }
 
   &-subtitle {
-    width: 532px;
+    max-width: 532px;
     font-size: 24px;
     font-weight: 400;
+    margin-top: 44px;
+    @media (max-width: 1022px){
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  &-btn {}
+  &-btn {
+    margin-top: 44px;
+  }
+ @media (max-width: 1022px){
+   text-align: center;
+ }
+}
+.btn{
+  width: 244px;
+  height: 64px;
+  border-radius: 30px;
+  background: #FAE01A;
+  box-shadow: 3px 8px 24px 2px rgb(250 224 26);
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
 }

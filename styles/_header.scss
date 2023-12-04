@@ -8,7 +8,17 @@
 
   }
 
-  &-logo {}
+  &-logo {
+    display: block;
+    width: 102px;
+    height: 88px;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 
   &-menu {
     margin-left: 100px;
@@ -23,6 +33,7 @@
     span {
       font-size: 18px;
       font-weight: 600;
+      white-space: nowrap;
     }
 
   }
@@ -39,6 +50,7 @@
       a {
         font-size: 16px;
         font-weight: 500;
+        white-space: nowrap;
       }
     }
   }
