@@ -1,19 +1,17 @@
 .info {
 
-
   height: calc(100% - 110px);
 
   &-container {
     display: flex;
     align-items: center;
-    background: url('img/left-bg.webp') left center no-repeat;
+    background: url('../public/img/left-bg.webp') left center no-repeat;
     background-size: contain;
     height: 100%;
     @media (max-width:1022px){
-      background: url('img/firstscreen-bg.webp') center center no-repeat;
+      background: url('../public/img/firstscreen-bg.webp') center center no-repeat;
       background-size: contain;
     }
-    border: 1px solid #000;
   }
 
   &-content {

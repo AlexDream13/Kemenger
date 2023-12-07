@@ -10,7 +10,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 38.4px */
+  line-height: 120%; 
 }
 html {
   position: relative;
@@ -83,10 +83,8 @@ iframe {
   position: fixed;
   transform: scale(0);
 }
-
 .container {
   max-width: 1294px;
   padding: 0 15px;
   margin: 0 auto;
-  
 }

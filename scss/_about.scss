@@ -1,0 +1,44 @@
+.about {
+
+    &-container {}
+
+    &-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid black;
+    }
+}
+
+.item {
+
+    &-content {
+        border: 1px solid green;
+
+        p {
+            width: 459px;
+            color: #000;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    &-content--right{}
+    &-content--left{
+        justify-self: end;
+    }
+
+    &-bg {}
+
+    &-image {
+        width: 488px;
+        height: 343px;
+        border-radius: 30px;
+        border: 1px solid red;
+
+    }
+    &-image--left{}    
+    &-image--right{
+        justify-self: end;
+    }    
+
+    &-border {}
+}
