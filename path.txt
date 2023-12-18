@@ -1,0 +1,1 @@
+nodepath=$(which node); sudo ln -s $nodepath /home/alex/.nvm/versions/node/v20.10.0/bin/node
