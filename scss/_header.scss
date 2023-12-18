@@ -1,18 +1,38 @@
 .header {
+  position: relative;
   padding-top: 20px;
-	
-
   &-container {
     display: flex;
     align-items: center;
 
   }
+  &-block--mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767.98px){
+      width: 200px;
+      flex-direction: column;
+      position: absolute;
+      top: -300px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 30px 15px;
+      z-index: 99;
+      transition: all 0.4s ease-in;
+      &.active{
+        top: 30px;
+      }
 
+    }
+  }
   &-logo {
     display: block;
     width: 102px;
     height: 88px;
-    img{
+    img {
       display: block;
       width: 100%;
       height: 100%;
@@ -22,31 +42,54 @@
 
   &-menu {
     margin-left: 100px;
+    @media (max-width: 940px){
+      margin-left: auto;
+    }
+    @media (max-width: 767.98px){
+      margin-left: 0;
+    }
   }
 
   &-contacts {
     margin-left: auto;
     display: flex;
     align-items: center;
-		gap: 8px;
+    gap: 8px;
 
     span {
       font-size: 18px;
       font-weight: 600;
       white-space: nowrap;
     }
-
+    @media (max-width: 767.98px){
+      width: 160px;
+      margin-left: 0;
+      margin-top: 20px;
+      span {
+        font-size: 16px;
+        
+      }
+    }
   }
 }
 
 .menu {
-
   &-list {
     display: flex;
     align-items: center;
     gap: 40px;
+    @media (max-width: 940px){
+      gap: 20px;
+    }
+    @media (max-width: 767.98px){
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
 
     li {
+      display: flex;
+      align-items: center;
       a {
         font-size: 16px;
         font-weight: 500;
