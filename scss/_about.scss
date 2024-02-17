@@ -1,7 +1,9 @@
 .about {
   margin-top: 150px;
-  @media (max-width: 767.98px){
+  @media (max-width: 470px){
     margin-top: 50px;
+  }
+  &-container {
   }
 
   &-item {
