@@ -1,0 +1,116 @@
+.learning {
+    width: 996px;
+    height: 719px;
+    margin: 200px auto 0 auto;
+    position: relative;
+  
+    @media (max-width: 1207px) {
+      margin-top: 50px;
+      transform: scale(0.7);
+      width: 100%;
+    }
+    @media (max-width: 699px) {
+      margin-top: 0px;
+      transform: scale(0.4);
+      width: 100%;
+      height: 350px;
+    }
+    @media (max-width: 420px) {
+      transform: scale(0.3);
+      margin-top: -50px;
+    }
+  }
+  
+  .learning-teacher {
+    padding-top: 150px;
+    width: 403px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    img {
+      width: 323px;
+      height: 321px;
+      margin: 0 auto;
+    }
+  
+    p {
+      white-space: nowrap;
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: center;
+      margin-top: 16px;
+      color: #000000;
+    }
+  }
+  
+  .learning-subjects {
+    position: absolute;
+    left: 50%;
+    width: 140px;
+    height: 182px;
+    top: 290px;
+    margin-left: -70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    -webkit-animation: spin 28s infinite linear;
+    animation: spin 28s infinite linear;
+    transform: scale(1);
+    transition: 0.5s;
+    z-index: 600;
+  
+    p {
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  
+  .learning-subjects:nth-child(2) {
+    -webkit-animation: spin 28s infinite linear 4s;
+    animation: spin 28s infinite linear 4s;
+  }
+  
+  .learning-subjects:nth-child(3) {
+    -webkit-animation: spin 28s infinite linear 8s;
+    animation: spin 28s infinite linear 8s;
+  }
+  
+  .learning-subjects:nth-child(4) {
+    -webkit-animation: spin 28s infinite linear 12s;
+    animation: spin 28s infinite linear 12s;
+  }
+  
+  .learning-subjects:nth-child(5) {
+    -webkit-animation: spin 28s infinite linear 16s;
+    animation: spin 28s infinite linear 16s;
+  }
+  
+  .learning-subjects:nth-child(6) {
+    -webkit-animation: spin 28s infinite linear 20s;
+    animation: spin 28s infinite linear 20s;
+  }
+  
+  .learning-subjects:nth-child(7) {
+    -webkit-animation: spin 28s infinite linear 24s;
+    animation: spin 28s infinite linear 24s;
+  }
+  
+  @keyframes spin {
+    0% {
+      opacity: 1;
+      transform: rotate(0turn) translateY(-500px) translateY(50%) rotate(1turn);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotate(1turn) translateY(-500px) translateY(50%) rotate(0turn);
+    }
+  
+  }
+  
+  
+  
+  
