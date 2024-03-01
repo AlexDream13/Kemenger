@@ -1,0 +1,50 @@
+.map {
+  margin-top: 250px;
+
+  @media (max-width: 994px) {
+    margin-top: 150px;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-circle--yellow {
+    top: 58px;
+    left: -95px;
+  }
+
+  &-circle--blue {
+    right: -80px;
+    bottom: 58px;
+  }
+
+  &-circle {
+    position: absolute;
+    z-index: 2;
+    @media (max-width: 994px){
+       display:none;
+    }
+  }
+
+  &-block {
+    position: relative;
+    width: 794px;
+    height: 539px;
+    margin: 0 auto;
+
+    @media (max-width:994px) {
+      max-width: 794px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 3;
+  }
+}

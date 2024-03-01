@@ -41,10 +41,14 @@
   --green:#4ECA30;
   --btnHover: #018FA3;
   --btnActive: #018FA3;
-  font-family: "Open Sans", sans-serif;
-  font-size: 32px;
+  --yellow:#ffe41b;
+  --pink:#ff4d94;
+  --brown:#ffa724;
+  --font-family: "Commissioner", sans-serif;
+  font-family: "Commissioner", sans-serif;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
 }
 
@@ -831,4 +835,197 @@ img {
     opacity: 1;
     transform: rotate(1turn) translateY(-500px) translateY(50%) rotate(0turn);
   }
+}
+.catalog {
+  margin-top: 200px;
+  padding: 68px 0 80px 0;
+  background-color: #F6FAFF;
+}
+
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+}
+
+.swiper {
+  max-width: 1290px;
+  width: 100%;
+  height: 800px;
+}
+
+.catalog-slider {
+  position: relative;
+  margin-top: 68px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000;
+}
+
+.swiper-button-next {
+  right: -30px;
+}
+
+.swiper-button-prev {
+  left: -30px;
+}
+
+.card {
+  border-radius: 30px;
+  width: 387px;
+  height: 778px;
+  box-shadow: 0 52px 34px -27px rgba(225, 225, 225, 0.15);
+  background: #fff;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+.card-header {
+  width: 100%;
+  height: 80px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-header--aqua {
+  background-color: var(--aqua);
+}
+.card-header--ametist {
+  background-color: var(--ametist);
+}
+.card-header--green {
+  background-color: var(--green);
+}
+.card-header--yellow {
+  background-color: var(--yellow);
+}
+.card-header--pink {
+  background-color: var(--pink);
+}
+.card-header--brown {
+  background-color: var(--brown);
+}
+.card-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.card-price {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+}
+.card-block > p + p {
+  margin-top: 8px;
+}
+.card-text {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+.card .card-content > p {
+  padding: 12px 0;
+  background: bottom no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg width='320' height='1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23F0F0F0' stroke-dasharray='10 10' d='M0 .5h320'/%3E%3C/svg%3E");
+}
+.card-link {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--aqua);
+}
+.card-btn {
+  display: block;
+  border-radius: 40px;
+  width: 219px;
+  height: 68px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.card-btn--aqua {
+  background-color: var(--aqua);
+}
+.card-btn--ametist {
+  background-color: var(--ametist);
+}
+.card-btn--green {
+  background-color: var(--green);
+}
+.card-btn--yellow {
+  background-color: var(--yellow);
+}
+.card-btn--pink {
+  background-color: var(--pink);
+}
+.card-btn--brown {
+  background-color: var(--brown);
+}
+.card-btn:hover {
+  transform: scale(1.1);
+}
+
+.map {
+  margin-top: 250px;
+}
+@media (max-width: 994px) {
+  .map {
+    margin-top: 150px;
+  }
+}
+.map-container {
+  position: relative;
+}
+.map-circle--yellow {
+  top: 58px;
+  left: -95px;
+}
+.map-circle--blue {
+  right: -80px;
+  bottom: 58px;
+}
+.map-circle {
+  position: absolute;
+  z-index: 2;
+}
+@media (max-width: 994px) {
+  .map-circle {
+    display: none;
+  }
+}
+.map-block {
+  position: relative;
+  width: 794px;
+  height: 539px;
+  margin: 0 auto;
+}
+@media (max-width: 994px) {
+  .map-block {
+    max-width: 794px;
+    width: 100%;
+    height: auto;
+  }
+}
+.map-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */
