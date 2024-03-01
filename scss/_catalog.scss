@@ -2,12 +2,15 @@
   margin-top: 200px;
   padding: 68px 0 80px 0;
   background-color: #F6FAFF;
+  @media (max-width: 768px){
+    padding: 28px 0 30px 0; 
+  }
 }
 
 .section-title {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 48px;
+  font-size: clamp(2rem, calc(1.66rem + 1.7vw), 3rem);
   color: #000;
   text-align:center;
 }
