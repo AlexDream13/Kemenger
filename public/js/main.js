@@ -11,12 +11,21 @@ burgerBlock.addEventListener("click", function () {
   document.body.classList.toggle('no-scroll');
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.catalog-swiper', {
   loop: true,
   slidesPerView: 3,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+});
+const reviews = new Swiper('.reviews-swiper', {
+  loop: true,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.reviews-button-next',
+    prevEl: '.reviews-button-prev',
   },
 
 });

@@ -1,0 +1,76 @@
+.reviews-swiper {
+  max-width: 1290px;
+  width: 100%;
+  height: 350px;
+}
+
+.reviews-slider {
+  position: relative;
+  margin-top: 68px;
+}
+
+.reviews-button-next, .reviews-button-prev {
+  position: absolute;
+  color: #000;
+  width: 24px;
+  height: 60px;
+  top: 100px;
+  cursor: pointer;
+
+}
+
+.reviews-button-next {
+  right: -30px;
+}
+
+.reviews-button-prev {
+  left: -30px;
+}
+
+.swiper-slide {
+}
+
+.reviews-card {
+  display: flex;
+  justify-content: center;
+}
+
+.revcard {
+  border: 4px solid #018fa3;
+  border-radius: 30px;
+  width: 387px;
+  height: 284px;
+  padding: 35px;
+  p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin-top: 12px;
+  }
+}
+
+.revcard-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+  }
+}
+
+.revcard-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
